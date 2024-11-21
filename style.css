@@ -261,7 +261,7 @@ li {
 }
 
 .article-inner {
-  max-width: 1040px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -281,11 +281,12 @@ li {
 .article-wrapper {
   width: 600px;
   height: 500px;
-  background-color: black;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .article-wrapper img {
