@@ -278,8 +278,8 @@ img {
 
 .article-wrapper {
   width: 600px;
-  height: 500px;
-  background-color: white;
+  height: 480px;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
