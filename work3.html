@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='TainakaR PortFolio'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='TainakaRのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="TainakaRのポートフォリオサイトです" />
+  <title>TainakaR ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href=".">TAINAKA WORKS</a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="./#works">WORKS</a></li>
+            <li class="header-nav-item"><a href="./#skill">SKILL</a></li>
+            <li class="header-nav-item"><a href="./#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-inner">
+          <h2 class="article-title">ミニゲーム</h2>
+          <div class="article-img">
+            <div class="article-wrapper">
+              <img src="work2/work2_1.png" alt="全体図1">
+            </div>
+            <div class="article-wrapper">
+              <img src="work2/work2_2.png" alt="全体図2">
+            </div>
+            <div class="article-wrapper">
+              <img src="work2/work2_3.png" alt="サーボテーブル1">
+            </div>
+            <div class="article-wrapper">
+              <img src="work2/work2_4.png" alt="サーボテーブル2">
+            </div>
+          </div>
+          <div class="article-body">
+            <p>
+              Hackathonで僕の所属するチーム「いれトラ」は学校のドアの鍵を自動施錠する装置を作成しました。
+              私の担当はハードウェアのデザインです。
+              上二つの画像は施錠機構の全体像を採寸して作ったもので、下二つはサーボモータを固定するために作ったものです。
+            </p>
+            <h3 class="article-info-title">作品の目的</h3>
+            <p>サーボモーターを動力源として利用し、学校の鍵を上下に動かすための機構を設計・作成すること</p>
+            <h3 class="article-info-title">作品の内容</h3>
+            <p>
+                上部の2つの全体像には、鍵を動かすためのツマミ機構、歯車、サーボモーター、およびそれを固定するためのテーブルがデザインしています。
+                これらは、機構全体の構造や各パーツのサイズ感を確認し、デザインの方向性を具体化する目的で制作しました。<br>
+                下部の2つのサーボテーブルは、サーボモーターと歯車を確実に固定し、ツマミと正確に噛み合わせるために定位置に設置することを目的として制作しました。
+            </p>
+            <h3 class="article-info-title">使用した技術</h3>
+            <p>
+                環境 : Autodesk Fusion
+            </p>
+            <h3 class="article-info-title">技術的なポイント</h3>
+            <ul>
+              <li>部品を細かく分解したことで、短時間の3Dプリントが出来た点</li>
+              <li>サーボモータの位置や歯車とその他機構のサイズを調整し、コンパクトに収めた点</li>
+            </ul>
+            <h3 class="article-info-title">課題と解決策</h3>
+            <ul>
+              <li>全体の機構が完成するまでには多くの試行錯誤がありました。<br>
+                学校の鍵を動かすためには大きな動力が必要であり、さらに鍵とドア板の間に十分な高さがないため、モーターの設置場所に悩みました。
+                また、手動での開閉が可能であることを維持するために、装置が鍵全体に大きく干渉しないよう工夫する必要がありました。<br>
+                これらの課題を解決するため、学校で鍵の自動解錠装置を製作した先生や、過去に同様の取り組みを行った元専攻科生の方々にアドバイスをいただきながら、現在の形にたどり着きました。
+              </li>
+              <li>
+                3Dデータが大きすぎてプリントできないという問題が発生しました。<br>
+                当初、私たちは全体の機構を一体化した大きな3Dデータを作成していましたが、プリントに1日半もかかることが判明しました。<br>
+                この問題を解決するため、各部品のデザインを見直し、機構を分解して少数ずつプリントする方法を採用しました。その結果、プリント時間を短縮し、効率的に製作を進めることができました。
+            </li>
+            </ul>
+            <h3 class="article-info-title">今後の展望</h3>
+            <p>
+                現在、装置と回路部分、およびArduinoを組み合わせた全体的な統合はまだ完成していません。
+                そのため、全体をよりコンパクトにまとめることを目指し、統合機構の設計と作成に取り組みたいと考えています。
+            </p>
+          </div>
+          <div class="home-link">
+            <a href="./#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;RYUNOSUKE TAINAKA</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
