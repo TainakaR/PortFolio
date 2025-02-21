@@ -276,6 +276,15 @@ img {
   margin-bottom: 20px;
 }
 
+.article-img-work4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 .article-wrapper {
   width: 600px;
   height: 480px;
@@ -295,7 +304,7 @@ img {
 
 .article-wrapper-work4 {
   width: 360px;
-  height: 450px;
+  height: 500px;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto; 
@@ -303,7 +312,7 @@ img {
 
 .article-wrapper-work4 img {
   width: 360px;
-  height: 450px;
+  height: 500px;
   object-fit: cover;
 }
 
