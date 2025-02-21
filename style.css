@@ -287,6 +287,17 @@ img {
   box-sizing: border-box;
 }
 
+.article-wrapper-work4 {
+  width: 450px;
+  height: 600px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
 .article-wrapper img {
   max-width: 100%;
   max-height: 100%;
