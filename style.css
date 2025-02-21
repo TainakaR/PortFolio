@@ -287,21 +287,24 @@ img {
   box-sizing: border-box;
 }
 
-.article-wrapper-work4 {
-  width: 450px;
-  height: 600px;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
 .article-wrapper img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.article-wrapper-work4 {
+  width: 360px;
+  height: 450px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; 
+}
+
+.article-wrapper-work4 img {
+  width: 360px;
+  height: 450px;
+  object-fit: cover;
 }
 
 .article-body {
