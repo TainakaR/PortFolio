@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='TainakaR PortFolio'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='TainakaRのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="TainakaRのポートフォリオサイトです" />
+  <title>TainakaR ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href=".">TAINAKA WORKS</a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="./#works">WORKS</a></li>
+            <li class="header-nav-item"><a href="./#skill">SKILL</a></li>
+            <li class="header-nav-item"><a href="./#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-inner">
+          <h2 class="article-title">一筆書きクイズ</h2>
+          <div class="article-img">
+            <div class="article-wrapper">
+              <img src="work1/work1_1.png" alt="１問目">
+            </div>
+            <div class="article-wrapper">
+              <img src="work1/work1_2.png" alt="２問目">
+            </div>
+          </div>
+          <div class="article-body">
+            <p>
+              この作品はGoogleColabで作った一筆書きか二筆書きかを判断するクイズです。必ず操作方法を読んでから実行してください。
+            </p>
+            <h3 class="article-info-title">URL</h3>
+            <p><a href="https://colab.research.google.com/drive/1XYRVCC2nMSO2pnnfeFx8xfU1rexhnCrV?usp=sharing" target="_blank" rel="noopener">https://colab.research.google.com/drive/1XYRVCC2nMSO2pnnfeFx8xfU1rexhnCrV?usp=sharing</a></p>
+            <h3 class="article-info-title">作品の目的</h3>
+            <p>プログラミング1の授業開始から4ヵ月間の集大成として、GoogleColab上で作品を制作することでGoogleColabやPythonに対する知識を深めること。</p>
+            <h3 class="article-info-title">作品の内容</h3>
+            <p>GoogleColabTurtleの機能で表示された図形を、制限時間内に判断するゲームです。
+                10秒間という短い時間で、複雑な図形が一筆書きなのか二筆書きなのかを考えることは、集中力や注意力を高める脳トレにもなります。
+                モノクロでシンプルな配色でシックな印象を持たせ、視覚的に落ち着きやすいように構成を工夫しています。
+            </p>
+            <h3 class="article-info-title">使用した技術</h3>
+            <p>
+                環境 : GoogleColab<br>
+                ライブラリ :「Interactive Widgets for Jupyter」「ColabTurtle Plus」
+            </p>
+            <h3 class="article-info-title">制作時期</h3>
+            <p>2024年7月</p>
+            <h3 class="article-info-title">技術的なポイント</h3>
+            <ul>
+              <li>Pythonのウィジェット機能を使用して、ラジオボタン、選択ボタンを作った点</li>
+              <li>サブスレッドを使用して、円滑に場面の移り変わりが起こるように作った点</li>
+              <li>time関数を使用して、現在時刻から経過時間を利用しプログレスバーの到達速度を調整している点</li>
+              <li>ColabTurtleのTurtleの速度を外部から調整することで、問題表示と解答表示の際のプログラムを一つに省略している点</li>
+            </ul>
+            <h3 class="article-info-title">課題と解決策</h3>
+            <ul>
+              <li>選択画面で選んだ内容が保存されないという問題が発生しました。<br>
+                原因は選択中に次に進まないようプログラムを止めている間には、ラジオボタンで選択された項目が反映されないというものでした。
+                したがって、「time.sleep」や「asyncio」では選択したことにはなりませんでした。<br>
+                解決策として、シンキングタイムのプログラムをサブスレッドで実行して、終了と同時にメインスレッドに戻すという方法で問題を解決しました。
+              </li>
+              <li>
+                ColabTurtleの速度が調整できないという問題が発生しました。<br>
+                問題表示時と解答表示時にそれぞれ速度を引数で与えても、最初に与えた値のみ有効になってしまうというものです。
+                これにより、それぞれを関数で定義してもうまく動作しませんでした。
+                解決策として、グローバル状態で速度を調整し関数内では定義しないことで、速度の調整を可能にしました。
+              </li>
+            </ul>
+            <h3 class="article-info-title">今後の展望</h3>
+            <p>
+                Google Colabの環境で作成した作品ですが、PythonやJavaScriptを使用したサイト型のゲームへと進化させたいと考えています。
+                現在のコードには不安定な部分や簡略化できる箇所があると思うので、学習が進んだ後に改良版を作成できればと思います。
+                また、得点の概念や、3D要素を取り入れた一筆書きの要素も追加したいと考えています。
+            </p>
+          </div>
+          <div class="home-link">
+            <a href="./#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;RYUNOSUKE TAINAKA</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
